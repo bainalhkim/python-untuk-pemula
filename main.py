@@ -169,3 +169,52 @@ for x in range(10):
     if x % 2 == 0:
         continue
     print(x)
+
+
+
+
+
+
+
+# Chapter 6 - Lists
+
+animals = ["Chicken", "Duck", "Lizard"]
+
+# Access items by index (starts from 0)
+print(animals[1])   # Duck
+print(animals[-1])  # Lizard
+print(animals[-2])  # Duck
+
+# Add items
+animals.append("Sheep")
+print(animals)
+animals.insert(2, "Crocodile")
+print(animals)
+
+# Remove items
+animals = ["Chicken", "Duck", "Lizard"]
+animals.remove("Duck")
+print(animals)
+
+animals = ["Chicken", "Duck", "Lizard"]
+animals.pop()
+print(animals)
+
+animals = ["Chicken", "Duck", "Lizard"]
+animals.pop(0)
+print(animals)
+
+animals = ["Chicken", "Duck", "Lizard"]
+animals.clear()
+print(animals)
+
+# Combine lists
+animals = ["Chicken", "Duck", "Lizard"]
+otherAnimals = ["Sheep", "Eagle", "Elephant"]
+animals.extend(otherAnimals)
+print(animals)
+
+fruits = ["Apple", "Mango", "Banana"]
+otherFruits = ["Durian", "Watermelon", "Orange"]
+allFruits = fruits + otherFruits
+print(allFruits)

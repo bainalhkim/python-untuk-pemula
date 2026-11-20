@@ -218,3 +218,42 @@ fruits = ["Apple", "Mango", "Banana"]
 otherFruits = ["Durian", "Watermelon", "Orange"]
 allFruits = fruits + otherFruits
 print(allFruits)
+
+
+
+
+
+
+
+
+
+# Chapter 7 - Dictionaries
+
+firstPerson = {
+    "first_name": "Hana",
+    "last_name": "Malika",
+    "age": 10
+}
+
+# Access items
+print(firstPerson['first_name'])  # Hana
+print(firstPerson.get('age'))     # 10
+print(firstPerson.keys())
+print(firstPerson.values())
+
+# Add an item
+firstPerson['weight'] = 12
+print(firstPerson)
+
+# Update items
+firstPerson['age'] = 15
+firstPerson.update({"age": 15})
+firstPerson.update({"hair_color": "black"})
+print(firstPerson)
+
+# Remove items
+firstPerson.pop("age")
+print(firstPerson)
+
+firstPerson.clear()
+print(firstPerson)

@@ -129,3 +129,43 @@ elif a > 70:
     print("Grade B.")
 else:
     print("Grade C.")  # runs
+
+
+
+
+
+
+
+# Chapter 5 - Loops
+
+# for loop with range
+for x in range(5):
+    print("Hello Python.")
+
+# for loop over a list
+fruits = ['Apple', 'Banana', 'Mango', 'Durian']
+for fruit in fruits:
+    print(fruit)
+
+# for loop over a string
+myCountry = "indonesia"
+for letter in myCountry:
+    print(letter)
+
+# while loop
+counter = 0
+while counter < 5:
+    print(counter)
+    counter += 1
+
+# break: stop the loop when x is 3
+for x in range(5):
+    print(x)
+    if x == 3:
+        break
+
+# continue: skip even numbers, print odd numbers only
+for x in range(10):
+    if x % 2 == 0:
+        continue
+    print(x)

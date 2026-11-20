@@ -91,3 +91,41 @@ print(a > 5 or b < 6)   # False
 # not
 print(not (a < 5 or b > 6))  # False
 print(not (a > 5 or b < 6))  # True
+
+
+
+
+
+# Chapter 4 - Conditionals (if, elif, else)
+# Python uses indentation to define code blocks.
+
+# Correct indentation
+if True:
+    print("Correct.")
+
+x = 5
+y = 10
+
+# Runs because x < y is True
+if x < y:
+    print("x is less than y.")
+
+# Does not run because x > y is False
+if x > y:
+    print("x is greater than y.")
+
+# if - elif
+a = 80
+if a > 90:
+    print("Grade A.")
+elif a > 70:
+    print("Grade B.")  # runs
+
+# if - elif - else
+a = 60
+if a > 90:
+    print("Grade A.")
+elif a > 70:
+    print("Grade B.")
+else:
+    print("Grade C.")  # runs

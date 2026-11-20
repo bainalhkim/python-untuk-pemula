@@ -257,3 +257,51 @@ print(firstPerson)
 
 firstPerson.clear()
 print(firstPerson)
+
+
+
+
+
+
+
+# Chapter 8 - Functions
+
+# Function without arguments
+def say_hello():
+    print("Hello")
+
+say_hello()
+
+# Function with one argument
+def greet(name):
+    print("Hello, I am %s" % name)
+
+greet("Rizqi")
+
+# Function with two arguments
+def introduce(name, age):
+    print("Hello, I am %s. I am %d years old" % (name, age))
+
+introduce("Rizqi", 30)
+
+# Arbitrary arguments (*args)
+def greet_many(*names):
+    for name in names:
+        print("Hello, I am %s" % name)
+
+greet_many("Rizqi", "Fika", "Yudi")
+
+# Keyword arguments: order does not matter
+introduce(age=25, name="Fika")
+
+# Arbitrary keyword arguments (**kwargs)
+def introduce_student(**student):
+    print("Hello, I am %s. I am %d years old" % (student['name'], student['age']))
+
+introduce_student(age=20, name="Rizqi")
+
+# Default argument value
+def greet_default(name="Alien"):
+    print("Hello, I am %s" % name)
+
+greet_default()

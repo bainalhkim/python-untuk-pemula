@@ -44,3 +44,50 @@ print(isStudent, isMarried)
 # Incorrect boolean value (raises NameError if uncommented)
 # c = true
 # print(c)
+
+
+
+
+
+
+
+
+# Chapter 3 - Operators
+
+# Arithmetic operators
+a = 4
+b = 2
+print(a + b)   # Addition: 6
+print(a - b)   # Subtraction: 2
+print(a * b)   # Multiplication: 8
+print(a / b)   # Division: 2.0
+print(a % b)   # Modulus: 0
+print(a ** b)  # Exponentiation: 16
+
+# Comparison operators
+a = 3
+b = 5
+print(a == b)  # False
+print(a != b)  # True
+print(a < b)   # True
+print(a <= b)  # True
+print(a > b)   # False
+print(a >= b)  # False
+
+# Logical operators
+a = 3
+b = 9
+
+# and
+print(a < 5 and b > 6)  # True
+print(a < 5 and b < 6)  # False
+print(a > 5 and b < 6)  # False
+
+# or
+print(a < 5 or b > 6)   # True
+print(a < 5 or b < 6)   # True
+print(a > 5 or b < 6)   # False
+
+# not
+print(not (a < 5 or b > 6))  # False
+print(not (a > 5 or b < 6))  # True

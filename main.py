@@ -305,3 +305,50 @@ def greet_default(name="Alien"):
     print("Hello, I am %s" % name)
 
 greet_default()
+
+
+
+
+
+
+
+
+# Chapter 9 - Classes and Objects
+
+# Class with a property
+class Cat:
+    color = "black"
+
+cat1 = Cat()
+print(cat1.color)  # black
+
+
+# Class with a constructor
+class CatWithColor:
+    color = "black"
+
+    def __init__(self, color):
+        self.color = color
+
+cat2 = CatWithColor("orange")
+print(cat2.color)  # orange
+
+
+# Class with a method
+class TalkingCat:
+    def say(self):
+        print("Meow..meow")
+
+cat3 = TalkingCat()
+cat3.say()
+
+
+# The first method parameter can have any name (convention: self)
+class CustomCat:
+    color = "black"
+
+    def say(myParam):
+        print("My color is %s" % myParam.color)
+
+cat4 = CustomCat()
+cat4.say()
